@@ -16,8 +16,6 @@ This is a solution to the [Expenses-chart page Quiz 2 challenge]
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 In the repo, I Recreated a expenses chart page which tracks your spending in span of 7 days. utilisng CSS, HTML and 
