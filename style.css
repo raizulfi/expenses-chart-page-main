@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* Define colors used in the page */
+    --clr-bg: hsl(27, 66%, 92%);
+    --clr-soft-red: hsl(10, 79%, 65%);
+    --clr-headings: hsl(25, 47%, 15%);
+    --clr-small: hsl(28, 10%, 53%);
+    --clr-active: hsl(186, 34%, 60%);
+}
+
+body {
+    /* Center the content in the body and set the background color */
+    display: flex;
+    font-family: 'DM Sans', sans-serif;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--clr-bg);
+}
+
+.container{
+    /* Set the container to a column layout and add some vertical space between elements */
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 28em;
+}
+
+.upper-part {
+    /* Style the upper part of the page */
+    display: flex;
+    background: var(--clr-soft-red);
+    justify-content: space-between;
+    padding: 2em;
+    color: white;
+    border-radius: 1em;
+}
+
+.lower-part {
+    /* Style the lower part of the page */
+    display: flex;
+    flex-direction: column;
+    border-radius: 1em;
+    background: white;
+    padding: 2em;
+    color: var(--clr-headings);
+}
+
+.chart-container {
+    /* Style the container for the chart */
+    display: flex;
+    justify-content: space-between;
+}
+
+.chart{
+    /* Style the chart */
+    display: flex;
+    flex-direction: column;
+    height: 12em;
+    gap: 0.5em;
+    justify-content: center;
+    align-items: center;
+}
+
+.chart-wrapper{
+    /* Style the chart wrapper */
+    width: 2.5em;
+    display: flex;
+    align-items: flex-end;
+    height: 90%;
+}
+
+.chart-value{
+    /* Style the chart value */
+    height: var(--height);
+    background: var(--clr-soft-red);
+    width: 100%;
+    border-radius: 0.25em;
+}
+
+.chart-value.active{
+    /* Style the active chart value */
+    background: var(--clr-active);
+}
+
+.chart-title{
+    /* Style the chart title */
+    color: var(--clr-small);
+    font-size: 0.8em;
+}
+
+hr{
+    /* Style the horizontal rule */
+    border: none;
+    width: 100%;
+    height: 1px;
+    background: var(--clr-bg);
+    margin: 1em 0;
+}
+
+.stats{
+    /* Style the stats section */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stats .right{
+    /* Style the right part of the stats section */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.lower-part small {
+    /* Style the small text in the lower part of the page */
+    font-size: 0.8em;
+    color: var(--clr-small);
+}
