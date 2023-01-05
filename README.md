@@ -24,11 +24,9 @@ to achive it. When the user hovers over a specific day's bar, the amount spent o
 
 Users should be able to:
 
-- View the bar chart and hover over the individual bars to see the correct amounts for each day
-- See the current day's bar highlighted in a different colour to the other bars
-- View the optimal layout for the content depending on their device's screen size
-- See hover states for all interactive elements on the page
-- **Bonus**: See dynamically generated bars based on the data provided in the local JSON file
+- view and hover over the bar chart which will show the amount spent on the day
+- 
+- 
 
 ### Screenshot
 
