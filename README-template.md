@@ -20,6 +20,8 @@ This is a solution to the [Expenses-chart page Quiz 2 challenge]
 
 ## Overview
 
+In the repo, I Recreated a expenses chart page which tracks your spending in span of 7 days. utilisng CSS, HTML and 
+to achive it. 
 ### The challenge
 
 Users should be able to:
@@ -42,17 +44,14 @@ Add a screenshot of your solution. Crop/optimize/edit your image however you lik
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
+- Live Site URL: https://raizulfi.github.io/expenses-chart-page-main/
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- [Styled Components](https://styled-components.com/) - For styles
+-HTML
+-CSS
+-Javascript
 
 **Note: These are just examples. Delete this note and replace the list above with your own choices**
 
