@@ -25,8 +25,8 @@ to achive it. When the user hovers over a specific day's bar, the amount spent o
 Users should be able to:
 
 - view and hover over the bar chart which will show the amount spent on the day
-- 
-- 
+- See hover states for all interactive elements on the page
+- animation when it first loading the page
 
 ### Screenshot
 
@@ -44,8 +44,7 @@ Users should be able to:
 
 -CSS
 
--Javascript
-
+-Javascript chart.js
 
 
 ### What I learned
@@ -53,11 +52,14 @@ Users should be able to:
 While I was creating the page, I've learned chart.js which what creates the bar chart you see on the page. there's also miniscule shorts cuts like ".class" which auto completes when creating a class which save major timing when and made working more efficiently
 ### Continued development
 
+when trying to fetch the files from the json file, it didn't into bar chart which is why chose to creat the bar chart using chat.js. I would like to work more with data and able to manipulate json file in the future.
 
 
 ### Useful resources
 
-
+this videos helped during the process of creation:
+- https://www.youtube.com/watch?v=wfbeDrcchNc&t=388s&ab_channel=VAIB 
+- https://www.youtube.com/watch?v=hK4n-IpZ7iE&ab_channel=IrvineMesa
 
 ## Your Detail 
 
@@ -65,10 +67,8 @@ While I was creating the page, I've learned chart.js which what creates the bar 
 - StudentID - 2602229673
 - BINUS Email - muhammad.zulfi001@binus.ac.id
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
+Special thanks to Viab and Irvine mesa which help tremendously in explaining how to utlise json file and chart.js
 
