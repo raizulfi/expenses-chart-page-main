@@ -32,7 +32,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![image](https://user-images.githubusercontent.com/114371959/210710235-3da0e001-b8b9-48cf-993a-f819e6ad349e.png)
+
 
 Add a screenshot of your solution. Crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
 
