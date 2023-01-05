@@ -3,41 +3,89 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">  
   <title>Frontend Mentor | Expenses chart component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
+ <!-- Include the script file at the bottom of the page -->
+ <script src="script.js"></script>
+ <!-- Include the Chart.js library for creating charts -->
+ <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
+
 <body>
-
-  My balance
-  $921.48
-
-  Spending - Last 7 days
-
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
-
-  Total this month
-  $478.33
-
-  +2.4%
-  from last month
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="container">
+    <!-- Upper part of the page, containing the balance and logo -->
+    <div class="upper-part">
+      <div class="left">
+        <small>My balance</small>
+        <h2>$921.48</h2>
+      </div>
+      <img src="./images/logo.svg" alt="" class="right">
+    </div>
+    <!-- Lower part of the page, containing the chart and stats -->
+    <div class="lower-part">
+      <h2>Spending - Last 7 days</h2>
+      <!-- Container for the charts -->
+      <div class="chart-container">
+        <canvas id="myChart"></canvas>
+        <script>
+          const ctx = document.getElementById('myChart').getContext('2d');
+          const myChart = new Chart(ctx, {
+              type: 'bar',
+              data: {
+                  labels: ['Mon', 'Tues', 'Wed', 'Thurs ', 'Fri', 'Sat', 'Sun'],
+                  datasets: [{
+                      label: '$USD',
+                      data: [19.85, 44.23, 60.55, 29.05, 30.56, 50.11, 38.99],
+                       backgroundColor: [
+                          'rgba(255, 102, 102, 0.5)',
+                          'rgba(255, 102, 102, 0.5)',
+                          'rgba(102, 255, 178, 0.5)',
+                          'rgba(255, 102, 102, 0.5)',
+                          'rgba(255, 102, 102, 0.5)',
+                          'rgba(255, 102, 102, 0.5)',
+                      ],
+                      borderColor: [
+                          'rgba(255, 102, 102)',
+                          'rgba(255, 102, 102)',
+                          'rgba(102, 255, 178)',
+                          'rgba(255, 102, 102)',
+                          'rgba(255, 102, 102)',
+                          'rgba(255, 102, 102)',
+                      ],
+                      borderWidth: 1
+                  }]
+              },
+              options: {
+                  scales: {
+                      y: {
+                          beginAtZero: true
+                      }
+                  }
+              }
+          });
+          </script>
+      </div>
+      <!-- Horizontal rule to separate the chart from the stats -->
+      <hr>
+      <!-- Stats section, containing the total for this month and the change from last month -->
+      <div class="stats">
+        <div class="left">
+          <small>Total this month</small>
+          <h1>$478.33</h1>
+        </div>
+        <div class="right">
+          <b>+2.4%</b>
+          <small>from last month</small>
+      </div>
+    </div>
   </div>
+
 </body>
+
 </html>
+<div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="#">Raihan Zulfi (2602229673)</a>.
+</div>
